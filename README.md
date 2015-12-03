@@ -1,15 +1,15 @@
 # Materialize for Yii2
 This is a set of widgets based on [MaterializeCSS] framework for [Yii2].
 
-Installation
+# Installation
 
 The preferred way to install this extension is through composer.
 
-Either run
+# Either run
 
 php composer.phar require --prefer-dist "merlano/yii2-materialize": "@stable" (for latest stable version)
 
-or add
+#or add
 
 "merlano/yii2-materialize": "@stable" (for latest stable version) - RECOMMENDED
 
