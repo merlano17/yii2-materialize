@@ -1,7 +1,7 @@
 {
     "name": "merlano/yii2-materialize",
     "autoload": {
-        "psr-0" : {
+        "psr-4" : {
             "merlano\\materialize\\" : ""
         }
     },
