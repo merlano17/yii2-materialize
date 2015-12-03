@@ -4,16 +4,16 @@ namespace merlano\materialize;
 
 use yii\helpers\Html;
 
-class Button extends Widget
+class Badge extends Widget
 {
     /**
      * @var string the tag to use to render the button
      */
-    public $tagName = 'button';
+    public $tagName = 'span';
     /**
      * @var string the button label
      */
-    public $label = 'Button';
+    public $label = '1';
     /**
      * @var boolean whether the label should be HTML-encoded.
      */
@@ -21,15 +21,7 @@ class Button extends Widget
     /**
      * @var string default css class for button
      */
-    public $defaultClass = 'waves-effect waves-light btn teal';
-    /**
-     * @var string default icon for button
-     */
-    public $icon = 'send';
-    /**
-     * @var icon enabled boolean default true
-     */
-    public $enableIcon = true;
+    public $defaultClass = 'badge';
 
     /**
      * Initializes the widget.
@@ -49,15 +41,6 @@ class Button extends Widget
     public function run()
     {
         $this->registerPlugin('button');
-        $this->label = $this->getLabel();
-        if ($this->enableIcon) {
-            $this->label .= Icon::widget(['label' => $this->icon,'options' => ['class' => 'right']]);
-        }
-        return Html::tag($this->tagName, $this->label, $this->options);
-    }
-
-    private function getLabel()
-    {
-        return $this->encodeLabel ? Html::encode($this->label) : $this->label;
+        return Html::tag($this->tagName, $this->encodeLabel ? Html::encode($this->label) : $this->label, $this->options);
     }
 }
