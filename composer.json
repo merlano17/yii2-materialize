@@ -1,0 +1,22 @@
+{
+    "name": "merlano/yii2-materialize",
+    "autoload": {
+        "psr-0" : {
+            "merlano\\materialize" : ""
+        }
+    }
+    "description": "This is an extension for Yii 2.0 applications who would like to use materialize framework",
+    "type": "yii2-extension",
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "bower-asset/jquery": "~2.1.1",
+        "bower-asset/materialize":"0.97.3"
+    },
+    "license": "BSD 3",
+    "authors": [
+        {
+            "name": "Karthik SG",
+            "email": "karthik.sg@talview.com"
+        }
+    ]
+}
